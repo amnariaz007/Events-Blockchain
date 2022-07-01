@@ -8,8 +8,9 @@
   },
   "dependencies": {
     "@truffle/hdwallet-provider": "2.0.0",
-    "web3": "1.6.1",
-    "ethereumjs-tx": "^2.1.2"
+    "abi-decoder": "^2.4.0",
+    "ethereumjs-tx": "^2.1.2",
+    "web3": "1.6.1"
   },
   "author": "",
   "license": "ISC"

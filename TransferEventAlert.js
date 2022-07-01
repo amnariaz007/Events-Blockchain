@@ -23,7 +23,8 @@ contract.methods.name().call((err,result)=>{
     
     //Transfer Event Emitting.........
     function handler (event) {
-        console.log('Alerting!!!..Transfer Event Emitting',event.transactionHash);
+        console.log('Alerting!!!.. Events Emitting',event.returnValues);
+        console.log('Alerting!!!.. Event Emitting Hash',event.transactionHash);
       }
       
       function errorCallback (err) {
@@ -41,11 +42,8 @@ contract.methods.name().call((err,result)=>{
       //**********************************************************************************************************
 
     //   contract.events.allEvents({
-    //     filter: {
-    //       assetId:
-    //         "115792089237316195423570985008687907836255866319593640866288853636324719067024",
-    //     },
-    //     fromBlock: 0,
+    //     filter: {myIndexedParam: [20,23], myOtherIndexedParam: '0x123456789...'}, // Using an array means OR: e.g. 20 or 23
+    //     fromBlock: 0
     // }, function(error, event){ console.log(event); })
     // .on("connected", function(subscriptionId){
     //     console.log(subscriptionId);
