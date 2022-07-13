@@ -28,19 +28,3 @@ const abi =
         console.log(res);
       });
 
-      
-    //   web3.eth.abi.decodeLog([{
-    //     type: 'string',
-    //     name: 'myString'
-    // },{
-    //     type: 'uint256',
-    //     name: 'myNumber',
-    //     indexed: true
-    // },{
-    //     type: 'uint8',
-    //     name: 'mySmallNumber',
-    //     indexed: true
-    // }],
-    //   web3.eth.abi.decodeLog(inputs, hexString, topics);
-
-
